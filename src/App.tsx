@@ -1,16 +1,16 @@
-import { Github, FileVideo, Upload, Wand2 } from "lucide-react";
-import { Button } from "./components/ui/button";
-import { Separator } from "./components/ui/separator";
-import { Textarea } from "./components/ui/textarea";
-import { Label } from "./components/ui/label";
+import { Github, FileVideo, Upload, Wand2 } from 'lucide-react'
+import { Button } from './components/ui/button'
+import { Separator } from './components/ui/separator'
+import { Textarea } from './components/ui/textarea'
+import { Label } from './components/ui/label'
 import {
   Select,
   SelectContent,
   SelectItem,
   SelectTrigger,
   SelectValue,
-} from "./components/ui/select";
-import { Slider } from "./components/ui/slider";
+} from './components/ui/select'
+import { Slider } from './components/ui/slider'
 
 export function App() {
   return (
@@ -44,8 +44,8 @@ export function App() {
             />
           </div>
           <p className="text-sm text-muted-foreground">
-            Lembre-se: você pode utilizar a variável{" "}
-            <code className="text-violet-400">{"{transcription}"}</code> no seu
+            Lembre-se: você pode utilizar a variável{' '}
+            <code className="text-violet-400">{'{transcription}'}</code> no seu
             prompt para adicionar o conteúdo da transcrição do vídeo
             selecionado.
           </p>
@@ -96,7 +96,9 @@ export function App() {
                 </SelectTrigger>
                 <SelectContent>
                   <SelectItem value="title">Título do Youtube</SelectItem>
-                  <SelectItem value="description">Descrição do Youtube</SelectItem>
+                  <SelectItem value="description">
+                    Descrição do Youtube
+                  </SelectItem>
                 </SelectContent>
               </Select>
             </div>
@@ -136,5 +138,5 @@ export function App() {
         </aside>
       </main>
     </div>
-  );
+  )
 }
